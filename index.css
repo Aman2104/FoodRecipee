@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.heading {
+    margin: auto;
+}
+.header{
+    background-color: #a2acbf ;
+    
+}
+.MealThumb{
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none!important;
+    color: black!important;
+}
+.grid {
+    /* color: aliceblue; */
+    display: grid;
+    height: 70px;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    padding-bottom: 0 !important;
+}
+
+.logIn {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    margin: auto 0;
+    margin-right: 15px;
+    text-align: end;
+}
+.btn{
+    --bs-btn-padding-x: 0.8rem!important;
+    --bs-btn-padding-y: 0.8rem!important;
+}
+.list {
+    padding: 0.9em 1.2em;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline;
+    border-radius: 8px;
+}
+.list:hover{
+    background-color: #589edc;
+}
+
+.links {
+    display: inline;
+    margin: auto 0;
+}
+
+/* Menu-Lines */
+.menu-lines {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 4px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 5px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Ended */
+
+.User{
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+@media (max-width:994px) {
+    .grid {
+        display: block;
+        height: auto;
+    }
+    header{
+        padding: 0 0 12px 0;
+    }
+    .grid.transition{
+        height: auto;
+        transition: all 0.3s linear;
+    }
+    .menu-lines{
+        display: inline-block;
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+    .list{
+        padding: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: block;
+    }
+    .links{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        display: none;
+        margin-top: 5px;
+    }
+    .show{
+        display: block;
+        transition: all 0.3s linear;
+    }
+    
+    /* .list-link {
+        display: block;
+        m
+    } */
+    .logIn{
+        display: none;
+        text-align: start;
+    }
+    .showbtn{
+        display: block;
+        margin-top: 10px;
+    }
+}
